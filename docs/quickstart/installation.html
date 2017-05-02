@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Installing PyBrain and its dependencies &mdash; PyBrain v0.2 documentation</title>
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.2',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="PyBrain v0.2 documentation" href="../index.html" />
+    <link rel="next" title="Building a Network" href="network.html" />
+    <link rel="prev" title="Welcome to PyBrain’s documentation!" href="../index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../modindex.html" title="Global Module Index"
+             accesskey="M">modules</a> |</li>
+        <li class="right" >
+          <a href="network.html" title="Building a Network"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../index.html" title="Welcome to PyBrain’s documentation!"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">PyBrain v0.2 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="installing-pybrain-and-its-dependencies">
+<span id="installation"></span><h1>Installing PyBrain and its dependencies<a class="headerlink" href="#installing-pybrain-and-its-dependencies" title="Permalink to this headline">¶</a></h1>
+<p>There are several requirements for PyBrain and we will go through them step by
+step.</p>
+<div class="section" id="python">
+<h2>Python<a class="headerlink" href="#python" title="Permalink to this headline">¶</a></h2>
+<p>On most Unix systems as Linux or Mac OS X, Python is already
+installed, but you should check if it is the right version - otherwise you will
+get weird errors. One way to do this is on the commandline:</p>
+<div class="highlight-python"><pre>$ python --version
+Python 2.5.2</pre>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Most command line examples will have a Unix look, but all of them are usable
+on Windows systems, too.</p>
+</div>
+<p>If you have not installed Python, you should go to the <a class="reference external" href="http://wiki.python.org/moin/BeginnersGuide/Download">official Python download
+page</a> and follow the
+instructions there.</p>
+</div>
+<div class="section" id="setuptools">
+<h2>Setuptools<a class="headerlink" href="#setuptools" title="Permalink to this headline">¶</a></h2>
+<p>Setuptools is a package that contains Python&#8217;s package manager and makes
+installation of python packages easier. We will use this for the requirements.</p>
+<p>First, download this <a class="reference external" href="http://peak.telecommunity.com/dist/ez_setup.py">bootstrap script</a>
+and run it:</p>
+<div class="highlight-python"><pre>$ python ez_setup.py</pre>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">On Unix systems, you will possibly have to run these commands as a superuser.</p>
+</div>
+</div>
+<div class="section" id="scipy-and-matplotlib">
+<h2>Scipy and Matplotlib<a class="headerlink" href="#scipy-and-matplotlib" title="Permalink to this headline">¶</a></h2>
+<p>This will install the python package manager Easy Install for you. Afterwards,
+you can do:</p>
+<div class="highlight-python"><pre>$ easy_install scipy
+$ easy_install matplotlib</pre>
+</div>
+<p>This might take longer, since scipy will also compile different things.</p>
+</div>
+<div class="section" id="pybrain">
+<h2>PyBrain<a class="headerlink" href="#pybrain" title="Permalink to this headline">¶</a></h2>
+<p>There are three ways of installing PyBrain: you can either go with our stable
+release on <a class="reference external" href="http://pybrain.org/pages/download">the webpage</a> or the bleeding
+edge from our git repository.</p>
+<p>To check out the PyBrain repository run:</p>
+<div class="highlight-python"><pre>$ git clone git://github.com/pybrain/pybrain.git pybrain</pre>
+</div>
+<p>If you are unfamiliar with git, there is also a direct download to the latest
+version <a class="reference external" href="http://github.com/pybrain/pybrain/tarball/master">here</a>.</p>
+<p>Change into the directory Pybrain directory after either checking out got or
+downloading and extracting the archive. There you run (possibly as a superuser
+on Unix systems):</p>
+<div class="highlight-python"><pre>$ python setup.py install</pre>
+</div>
+<p>Now everything should be installed. To test if it works fine, go into Python and
+import PyBrain. You should see something like this:</p>
+<div class="highlight-python"><pre>$ python
+Python 2.5.2 (r252:60911, Sep 17 2008, 11:21:23)
+[GCC 4.0.1 (Apple Inc. build 5465)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+&gt;&gt;&gt; import pybrain
+&gt;&gt;&gt;</pre>
+</div>
+<p>If this works, you are set.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../index.html">
+              <img class="logo" src="../_static/pybrain_logo.gif" alt="Logo"/>
+            </a></p>
+            <h3><a href="../index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="">Installing PyBrain and its dependencies</a><ul>
+<li><a class="reference external" href="#python">Python</a></li>
+<li><a class="reference external" href="#setuptools">Setuptools</a></li>
+<li><a class="reference external" href="#scipy-and-matplotlib">Scipy and Matplotlib</a></li>
+<li><a class="reference external" href="#pybrain">PyBrain</a></li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="../index.html"
+                                  title="previous chapter">Welcome to PyBrain&#8217;s documentation!</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="network.html"
+                                  title="next chapter">Building a Network</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="../_sources/quickstart/installation.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+          <div id="searchbox" style="display: none">
+            <h3>Quick search</h3>
+              <form class="search" action="../search.html" method="get">
+                <input type="text" name="q" size="18" />
+                <input type="submit" value="Go" />
+                <input type="hidden" name="check_keywords" value="yes" />
+                <input type="hidden" name="area" value="default" />
+              </form>
+              <p class="searchtip" style="font-size: 90%">
+              Enter search terms or a module, class or function name.
+              </p>
+          </div>
+          <script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../modindex.html" title="Global Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="network.html" title="Building a Network"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../index.html" title="Welcome to PyBrain’s documentation!"
+             >previous</a> |</li>
+        <li><a href="../index.html">PyBrain v0.2 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+      &copy; Copyright 2008, CogBotLab &amp; Idsia.
+      Last updated on Aug 13, 2009.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.6.1.
+    </div>
+  </body>
+</html>
