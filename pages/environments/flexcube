@@ -1,0 +1,85 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>PyBrain</title>
+	<meta name="author" content="Thomas Rueckstiess">
+	<link rel="stylesheet" type="text/css" href="../../css/layout.css" /></head>
+
+<body>
+	<div id='center'>
+		<div id='header'>
+			<div id='searchbox'></div>
+			<div id='metamenu'>
+
+
+<ul>
+	<li><a href="http://wiki.github.com/pybrain/pybrain/" >Wiki</a></li>
+	|
+	<li><a href="../contact.html" >Contact</a></li>
+</ul>
+</div>
+			<div id='topmenu'>
+
+
+<div class='button'><a href="../researchers.html" >Researchers</a></div>
+<div class='button'><a href="../students.html" >Students</a></div>
+<div class='button'><a href="../lecturers.html" >Lecturers</a></div>
+<div class='button'><a href="../developers.html" >Developers</a></div>
+</div>
+		</div>
+
+	  <div id='mainarea'>
+			<div id='sidebar'>
+<ul>
+	<li><a href="../home.html" >Home</a></li>
+	<li><a href="../features.html" >Features</a></li>
+	<li><a href="../../docs/index.html" >Documentation</a></li>
+	<li><a href="../download.html" >Download</a></li>
+	<li><a href="../publications.html" >Publications</a></li>
+	<li><a href="../contact.html" >Contact</a></li>
+
+</ul>
+ 			</div>
+
+			<div id='contentarea'>
+
+
+<h1>The FlexCube Environment</h1>
+
+State of the art reinforcement learning methods deal with complex, only partial observable and noisy problems. Implementing new ways of reinforcement learning and trying to compare different learning methods, requires a framework that is adequate complex. On the other hand the framework must be fast, so that comparing methods can be done just in time.
+<br><br>
+The FlexCube Environment provides that: Twelve synchronous, continuous controllable edges provide a complex continuous action space. The spring morphology provides a noisy, partial observable also continuous state space.
+<br><br>
+<h2>Concept</h2>
+The framework is a test case for all methods that should be capable of handling partial observable Markov decision processes (POMDPs) with mapping from continuous state- to continuous action space. But despite of that principal complexity, the framework is still fast and easy to handle.
+<br><br>
+<h2>Physics and Structure</h2>
+<div style="float:left; padding: 5px;">
+<a target="blank" href="http://www6.informatik.tu-muenchen.de/~sehnke/cube1.avi">
+<img src=http://www6.informatik.tu-muenchen.de/~sehnke/cube1.png><br>
+Passive physics
+</a>
+</div>
+<div style="float:left; padding:5px;">
+<a target="blank" href="http://www6.informatik.tu-muenchen.de/~sehnke/cube2.avi">
+<img width=100 src=http://www6.informatik.tu-muenchen.de/~sehnke/cube2.png><br>
+Random behaviour
+</a>
+</div>
+
+<div style="float:left">
+Body: masspoints connected with springs<br>
+Powers: gravitation and inertia<br>
+Friction: total friction
+</div>
+
+<div style="clear: both;">&nbsp;</div>
+
+
+
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>PyBrain</title>
+	<meta name="author" content="Thomas Rueckstiess">
+	<link rel="stylesheet" type="text/css" href="../css/layout.css" />
+</head>
+<body>
+	<div id='center'>
+		<div id='header'>
+			<div id='searchbox'></div>
+			<div id='metamenu'>
+
+
+<ul>
+	<li><a href="http://wiki.github.com/pybrain/pybrain/" >Wiki</a></li>
+	|
+	<li><a href="contact.html" >Contact</a></li>
+</ul>
+</div>
+			<div id='topmenu'>
+
+
+<div class='button'><a href="researchers.html" >Researchers</a></div>
+<div class='button'><a href="students.html" >Students</a></div>
+<div class='button'><a href="lecturers.html" >Lecturers</a></div>
+<div class='button'><a href="developers.html" >Developers</a></div>
+</div>
+		</div>
+
+	  <div id='mainarea'>
+			<div id='sidebar'>
+
+
+
+<ul>
+	<li><a href="home.html" >Home</a></li>
+	<li><a href="features.html" >Features</a></li>
+	<li><a href="../docs/index.html" >Documentation</a></li>
+	<li><a href="download.html" >Download</a></li>
+	<li><a href="publications.html" >Publications</a></li>
+	<li><a href="contact.html" >Contact</a></li>
+
+</ul>
+ 			</div>
+
+			<div id='contentarea'>
+
+
+<h1>Features</h1>
+<h2>Videos</h2>
+
+This video presentation was shown at the ICML Workshop for Open Source ML Software on June 25, 2010. It explains some of the features and algorithms of PyBrain and gives tutorials on how to install and use PyBrain for different tasks. <br><br>
+
+<object width="640" height="480"><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=12914367&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=0&amp;show_portrait=0&amp;color=00ADEF&amp;fullscreen=1" /><embed src="http://vimeo.com/moogaloop.swf?clip_id=12914367&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=0&amp;show_portrait=0&amp;color=00ADEF&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="640" height="480"></embed></object>
+
+<br><br>
+
+This video shows some of the learning features in PyBrain in action.<br><br>
+
+<object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/fEM7YDNonSE&amp;hl=de_DE&amp;fs=1&amp;"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/fEM7YDNonSE&amp;hl=de_DE&amp;fs=1&amp;" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></embed></object>
+
+
+<h2>Algorithms</h2>
+
+We implemented many useful standard and advanced algorithms in PyBrain,
+and in some cases created interfaces to existing libraries (e.g. LIBSVM).
+This list shows some of the methods you can use with PyBrain.
+
+<h3>Supervised Learning</h3>
+<ul>
+<li>Back-Propagation</li>
+<li>R-Prop</li>
+<li>Support-Vector-Machines (LIBSVM interface)
+<li>Evolino</li>
+</ul>
+
+<h3>Unsupervised Learning</h3>
+<ul>
+<li>K-Means Clustering</li>
+<li>PCA/pPCA</li>
+<li>LSH for Hamming and Euclidean Spaces</li>
+<li>Deep Belief Networks</li>
+</ul>
+
+<h3>Reinforcement Learning</h3>
+<h4>Value-based</h4>
+<ul>
+<li>Q-Learning (with/without eligibility traces)</li>
+<li>SARSA</li>
+<li>Neural Fitted Q-iteration</li>
+</ul>
+
+<h4>Policy Gradients</h4>
+<ul>
+<li>REINFORCE</li>
+<li>Natural Actor-Critic</li>
+</ul>
+
+<h4>Exploration Methods</h4>
+<ul>
+<li>Epsilon-Greedy Exploration (discrete)</li>
+<li>Boltzmann Exploration (discrete)</li>
+<li>Gaussian Exploration (continuous)</li>
+<li>State-Dependent Exploration (continuous)</li>
+</ul>
+
+<h3>Black-box Optimization</h3>
+<ul>
+<li>(Stochastic) Hill-climbing</li>
+<li>Particle Swarm Optimization (PSO)</li>
+<li>Evolution Strategies (ES)</li>
+<li>Covariance Matrix Adaption ES (CMA-ES)</li>
+<li>Natural Evolution Strategies (NES)</li>
+<li>Fitness Expectation-Maximization (FEM)</li>
+<li>Finite Difference Gradient Descent</li>
+<li>Policy Gradients with Parameter Exploration (PGPE)</li>
+<li>Simultaneous Perturbation Stochastic Approximation (SPSA)</li>
+<li>Genetic Algorithms (GA)</li>
+<li>Competitive Co-Evolution</li>
+<li>(Inner/Inverse) Memetic Search</li>
+<li>Multi-Objective Optimization NSGA-II</li>
+</ul>
+
+
+<h2>Networks</h2>
+PyBrain has an emphasis on network architectures, which can be trained and manipulated
+with almost all of the algorithms offered by PyBrain. Here are some examples of available
+networks and network architectures:
+<ul>
+<li>Feed-forward networks, including Deep Belief Networks and Restricted Boltzmann Machines (RBM)</li>
+<li>Recurrent networks (RNN), including Long Short-Term Memory (LSTM) architectures</li>
+<li>Multi-Dimensional Recurrent Networks (MDRNN)</li>
+<li>Self-Organizing Maps (Kohonen networks)</li>
+<li>Reservoirs</li>
+<li>Bidirectional networks</li>
+<li>Custom-designed topologies</li>
+</ul>
+
+<h2>Tools</h2>
+<ul>
+<li>Plotting / Visualization</li>
+<li>netCDF support</li>
+<li>XML read/write</li>
+<li>Variety of different dataset classes</li>
+</ul>
+
+<h2>Environments</h2>
+Environments in PyBrain are scenarios or test cases, in which an agent can be trained
+or an algorithm can be tested. Environments share a common interface, thus making it
+very easy to switch agents. PyBrain comes with a view predefined most basic environments:
+
+<h3>Toy Environments</h3>
+<ul>
+<li>ShipSteering</li>
+<li>Mazes (MDP/POMDP)</li>
+</ul>
+
+
+<h3>3D Environments</h3>
+These environments have additional dependencies (e.g. OpenGL, ODE) that require extra
+software. More documentation can be found in the respective environment folders.
+
+<ul>
+<li>In the <a href="environments/flexcube" >FlexCube Environment</a>, twelve synchronous,
+continuously controllable edges of a virtual cube provide a complex continuous action space which is
+rendered with OpenGL.</li>
+<li>The <a href="environments/ode.html" >ODE Environment</a> contains the ODE physics engine and
+allows arbitrary objects to interact with themself and other objects in a pysically realistic way.
+The scene can be rendered with OpenGL to give the user a precise information about what is going
+on in the scenario.</li>
+<li>Johnnie (a robot in the ODE environment)</li>
+<li>PencilBalancer (another example in the ODE environment)</li>
+</ul>
+
+<h3>Games</h3>
+<ul>
+<li>CaptureGame</li>
+<li>Pente</li>
+<li>Gomoku</li>
+</ul>
+
+<h3>Benchmarks</h3>
+<h4>Function Environments</h4>
+<ul>
+<li>Unimodal</li>
+<li>Multimodal</li>
+<li>Multi-Objective</li>
+</ul>
+
+<h4>Pole-Balancing</h4>
+<ul>
+<li>Single-Pole with different tasks</li>
+<li>Double-Pole</li>
+</ul>
+
+<h4>Wrappers for external benchmarks</h4>
+<ul>
+<li>Car-Racing</li>
+<li>RLGlue</li>
+</ul>
+
+<p>
+If you have programmed your own
+environment and think others might find it useful, please <a href="contact.html" >contact</a>
+us and let us know. We are looking forward to add your environment to the list.
+</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
